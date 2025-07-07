@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/<your-username>/<your-repo>.git'
+    repoURL: 'https://github.com/Pavanikoduru/Devops-infra-pipeline.git'
     targetRevision: HEAD
     path: manifests
   destination:
