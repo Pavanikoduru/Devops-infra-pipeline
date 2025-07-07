@@ -25,8 +25,11 @@ terraform apply -auto-approve
 Create NGINX manifest in manifests/nginx-deployment.yaml
 
 Apply:
+
 kubectl apply -f manifests/nginx-deployment.yaml
+
 kubectl get pods
+
 kubectl get svc nginx-service
 
 Access in browser:
@@ -34,27 +37,35 @@ Access in browser:
 kubectl port-forward svc/nginx-service 8080:80
 
 Visit: http://localhost:8080
+
 You’ll see “Welcome to nginx!”
 
 3. Deploy ARGOCD
 
 Install ArgoCD:
+
 kubectl create namespace argocd
+
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
 Port-forward ArgoCD server:
+
 kubectl port-forward svc/argocd-server -n argocd 8081:443
 
 Access UI: http://localhost:8081
 
 Get ArgoCD admin password:
+
 kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.password}" | base64 -d && echo
+
 Login: admin / <password>
 
 Create argocd/nginx-app.yaml
+
 Apply:
 
 kubectl apply -f argocd/nginx-app.yaml
+
 Go to ArgoCD UI → Applications → nginx-app → Sync → you’ll see your NGINX pod.
 
 Verify GitOps:
