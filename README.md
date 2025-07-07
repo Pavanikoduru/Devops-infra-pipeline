@@ -66,6 +66,8 @@ Apply:
 
 kubectl apply -f argocd/nginx-app.yaml
 
+4. GitOps
+
 Go to ArgoCD UI → Applications → nginx-app → Sync → you’ll see your NGINX pod.
 
 Verify GitOps:
@@ -90,9 +92,3 @@ Log in → click your nginx-app
 Click Refresh 🔄 (top right)
 
 Click SYNC → SYNCHRONIZE
-
-
-
-
-
-
