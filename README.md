@@ -13,6 +13,7 @@ terraform validate
 
 Apply:
 terraform apply
+
 Confirm with yes when prompted.
 
 If you want to skip this prompt automatically next time, you can use:
@@ -65,10 +66,6 @@ Verify GitOps:
 How to check that it worked
 Run:
 kubectl get deployment
-
-You should see:
-NAME                READY   UP-TO-DATE   AVAILABLE   AGE
-nginx-deployment    3/3     3            3           <time>
 
 Open https://localhost:8081
 
