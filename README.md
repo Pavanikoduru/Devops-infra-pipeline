@@ -58,12 +58,17 @@ kubectl apply -f argocd/nginx-app.yaml
 Go to ArgoCD UI → Applications → nginx-app → Sync → you’ll see your NGINX pod.
 
 Verify GitOps:
+
 -> Make a change in nginx-deployment.yaml — e.g., replicas: 2 → 3
+
 -> Change repo URL in nginx-app.yaml
+
 -> Commit & push.
+
 -> ArgoCD auto-syncs → Pod count changes to 3.
 
 How to check that it worked
+
 Run:
 kubectl get deployment
 
