@@ -1,4 +1,4 @@
-# Devops-infra-pipeline
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/7720c050-ff97-464e-b91d-b5e9d4033aca" /># Devops-infra-pipeline
 
 1. TERRAFORM steps:
 
@@ -39,6 +39,8 @@ kubectl port-forward svc/nginx-service 8080:80
 Visit: http://localhost:8080
 
 You’ll see “Welcome to nginx!”
+
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/e29dfcc3-bc49-478a-8e1a-13ba900b5dd1" />
 
 3. Deploy ARGOCD
 
