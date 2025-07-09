@@ -56,6 +56,8 @@ kubectl port-forward svc/argocd-server -n argocd 8081:443
 
 Access UI: http://localhost:8081
 
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/91692d2e-405e-47cc-9446-e810968935ca" />
+
 Get ArgoCD admin password:
 
 kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.password}" | base64 -d && echo
@@ -94,3 +96,6 @@ Log in → click your nginx-app
 Click Refresh 🔄 (top right)
 
 Click SYNC → SYNCHRONIZE
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/77298b87-3b86-4887-ae13-c31fd5beab8c" />
+
