@@ -1,4 +1,4 @@
-<img width="956" alt="image" src="https://github.com/user-attachments/assets/7720c050-ff97-464e-b91d-b5e9d4033aca" /># Devops-infra-pipeline
+#DevOps Infra Pipeline Steps
 
 1. TERRAFORM steps:
 
